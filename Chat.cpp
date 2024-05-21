@@ -104,7 +104,7 @@ void Chat::DeleteUser(const string& delUser) {
     delete[] users; //Очищаем
     users = newArray; //Добавляем без того пользователя
 
-    cout << "The account has been deleted.";
+    cout << "The account has been deleted." << endl;
 
     --_size;
 }
