@@ -70,7 +70,7 @@ const User* Chat::GetUsers() const {
 
 //Функция добавления нового пользователя
 void Chat::AddUser(const User& newUser) {
-    User* newArray = new User[_size + 1]; //Создание динамического массива с выделением памяти под кождого нового пользователя
+    User* newArray = new User[_size + 1]; //Создание динамического массива с выделением памяти под каждого нового пользователя
     for (int i = 0; i < _size; ++i) {
         newArray[i] = users[i]; //Копирование старых пользователей
     }
